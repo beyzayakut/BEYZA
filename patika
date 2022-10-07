@@ -1,0 +1,18 @@
+import java.util.Scanner;
+
+class Scratch {
+public static void main(String[] args) {
+        double sayi, a, b;
+
+        Scanner input = new Scanner(System.in);
+        System.out.print("para degeri giriniz: ");
+        sayi = input.nextDouble();
+
+        a = (0 < sayi && sayi < 1000) ? 0.18 : 0.08;
+        b = (sayi * (1 + a));
+
+        System.out.println("KDV'siz Fiyat=" + sayi);
+        System.out.println("KDV'li Fiyat=" + b);
+        System.out.println("KDV Tutarı=" + a);
+    }
+}
